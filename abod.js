@@ -28,7 +28,7 @@ var enter = confirm("مرحباً بك يا " + name + "، هل تريد دخو�
 
 if (enter) {
     alert("أهلاً بك في الموقع");
-    document.getElementById("main-content").style.display = "block";
+    document.bodt.style.setproperty("display","block","important");
 } else {
     alert("وداعاً!");
     document.write("<h1 style='text-align:center; margin-top:50px;'>تم إلغاء دخول الموقع. نتمنى زيارتك مجدداً!</h1>");
