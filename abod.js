@@ -23,19 +23,15 @@ var str = "my 3 kings beat your 2 aces";
 var matches = str.match(/[ab]/g);
 document.write("match is ",matches  ,"<br/>"); */
 var name = prompt("اكتب اسمك:");
-
 var enter = confirm("مرحباً بك يا " + name + "، هل تريد دخول الموقع؟");
 
 if (enter) {
     alert("أهلاً بك في الموقع");
-    document.bodt.style.setproperty("display","block","important");
+    document.getElementById("main-content").style.display = "block";
 } else {
     alert("وداعاً!");
-    document.write("<h1 style='text-align:center; margin-top:50px;'>تم إلغاء دخول الموقع. نتمنى زيارتك مجدداً!</h1>");
+    document.body.innerHTML = "<h1 style='text-align:center; margin-top:50px; font-family: sans-serif;'>عذراً، لم يتم الدخول للموقع. نتمنى زيارتك مجدداً</h1>";
 }
-
-
-
 
 
 
